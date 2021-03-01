@@ -45,6 +45,21 @@ namespace Array_Practice
             {
                 Console.WriteLine("Element{0} = {1}", j, nums[j]);
             }
+
+            int counter = 0;
+            //create a variable called k and run through the whole array
+            foreach(int k in nums)
+            {
+                counter++;
+                Console.WriteLine("Element{0} = {1}", counter, k);
+
+            }
+
+            string[] friends = { "steph", "dan", "rikki", "zack", "danny" };
+            foreach(string k in friends)
+            {
+                Console.WriteLine("My friend is {0}", k);
+            }
         }
     }
 }
