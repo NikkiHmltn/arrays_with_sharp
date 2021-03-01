@@ -16,7 +16,21 @@ namespace Array_Practice
             grades[3] = 35;
             grades[4] = 70;
 
+
             Console.WriteLine("Grades at index 0 : {0}", grades[0]);
+            // assign value to array grades at index 0 
+            string input = Console.ReadLine();
+            grades[0] = int.Parse(input);
+
+            Console.WriteLine("Grades at index 0 : {0}", grades[0]);
+
+            //another way to initialize an array
+            int[] gradesMath = { 20, 13, 12, 8, 8, 10 };
+
+            //third way to initialize an array
+            int[] gradesEnglish = new int[] { 14, 20, 10, 10, 12, 14, 19 };
+
+            Console.WriteLine("Length of grades is " + gradesMath.Length);
         }
     }
 }
