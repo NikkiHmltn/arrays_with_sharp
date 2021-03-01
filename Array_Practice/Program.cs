@@ -60,6 +60,44 @@ namespace Array_Practice
             {
                 Console.WriteLine("My friend is {0}", k);
             }
+
+            // 2-d array with "," named matrix
+            string[,] matrix;
+
+            // 3-d array
+            int[,,] threeD;
+
+            //multidimensional arrays depend on the amount of commas
+
+            int[,] array2D = new int[,]
+            {
+                //row 0
+                {1,2,3},
+                //row 1
+                {4,5,6},
+                // row 2
+                {7,8,9}
+            };
+
+            // position 1, 1 is at row 1, index 1
+            Console.WriteLine("Central value is {0}", array2D[1,1]);
+            Console.WriteLine("Bottom left value is {0}", array2D[2, 0]);
+
+            string[,,] array3D = new string[,,]
+            {
+                {
+                    {"000","001" },
+                    {"010", "011" }
+                },
+                {
+                    {"100", "101" },
+                    {"110", "111" }
+                }
+            };
+
+            Console.WriteLine("The value is {0}", array3D[1, 1, 0]);
+
+
         }
     }
 }
